@@ -174,10 +174,3 @@ To remove all installed files, simply delete the project folder and the conda en
 conda env remove -n autotestgen
 rm -rf auto-testgen
 ```
-
-## 12. Summary
-
-This project provides an offline solution for automatic Python unit test generation using a local language model. It is designed to integrate easily with existing codebases, improve testing coverage, and accelerate quality assurance workflows.
-
-**End of README**
-

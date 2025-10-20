@@ -1,0 +1,238 @@
+2025-10-18 23:04:59 [INFO] auto_testgen: === Auto TestGen Started ===
+2025-10-18 23:04:59 [ERROR] auto_testgen: Failed to load LLM: name 'os' is not defined
+Traceback (most recent call last):
+  File "C:\Users\fleet\OneDrive\Documents\coding\python_unit_test_autogen\llm_client.py", line 13, in __init__
+    n_threads=os.cpu_count(),  # automatically uses all CPU cores
+NameError: name 'os' is not defined
+2025-10-18 23:04:59 [ERROR] auto_testgen: Fatal error: name 'os' is not defined
+Traceback (most recent call last):
+  File "C:\Users\fleet\OneDrive\Documents\coding\python_unit_test_autogen\auto_testgen.py", line 15, in main
+    llm = LLMClient(
+  File "C:\Users\fleet\OneDrive\Documents\coding\python_unit_test_autogen\llm_client.py", line 13, in __init__
+    n_threads=os.cpu_count(),  # automatically uses all CPU cores
+NameError: name 'os' is not defined
+2025-10-18 23:04:59 [INFO] auto_testgen: === Auto TestGen Completed ===
+2025-10-18 23:05:33 [INFO] auto_testgen: === Auto TestGen Started ===
+2025-10-18 23:05:33 [ERROR] auto_testgen: Failed to load LLM: Model path does not exist: C:/Users/fleet/OneDrive/Documents/coding/python_unit_test_autogen/models/llama-3-8b-instruct.Q4_K_M.gguf
+Traceback (most recent call last):
+  File "C:\Users\fleet\OneDrive\Documents\coding\python_unit_test_autogen\llm_client.py", line 11, in __init__
+    self.llm = Llama(
+  File "C:\Users\fleet\anaconda3\envs\autotestgen\lib\site-packages\llama_cpp\llama.py", line 370, in __init__
+    raise ValueError(f"Model path does not exist: {model_path}")
+ValueError: Model path does not exist: C:/Users/fleet/OneDrive/Documents/coding/python_unit_test_autogen/models/llama-3-8b-instruct.Q4_K_M.gguf
+2025-10-18 23:05:33 [ERROR] auto_testgen: Fatal error: Model path does not exist: C:/Users/fleet/OneDrive/Documents/coding/python_unit_test_autogen/models/llama-3-8b-instruct.Q4_K_M.gguf
+Traceback (most recent call last):
+  File "C:\Users\fleet\OneDrive\Documents\coding\python_unit_test_autogen\auto_testgen.py", line 15, in main
+    llm = LLMClient(
+  File "C:\Users\fleet\OneDrive\Documents\coding\python_unit_test_autogen\llm_client.py", line 11, in __init__
+    self.llm = Llama(
+  File "C:\Users\fleet\anaconda3\envs\autotestgen\lib\site-packages\llama_cpp\llama.py", line 370, in __init__
+    raise ValueError(f"Model path does not exist: {model_path}")
+ValueError: Model path does not exist: C:/Users/fleet/OneDrive/Documents/coding/python_unit_test_autogen/models/llama-3-8b-instruct.Q4_K_M.gguf
+2025-10-18 23:05:33 [INFO] auto_testgen: === Auto TestGen Completed ===
+2025-10-18 23:07:22 [INFO] auto_testgen: === Auto TestGen Started ===
+2025-10-18 23:07:22 [WARNING] auto_testgen: Model path not found: C:/Users/fleet/OneDrive/Documents/coding/python_unit_test_autogen/models/llama-3-8b-instruct.Q4_K_M.gguf
+2025-10-18 23:07:22 [INFO] auto_testgen: Downloading default model from https://huggingface.co/TheBloke/Llama-3-8B-Instruct-GGUF/resolve/main/llama-3-8b-instruct.Q4_K_M.gguf ... this may take several minutes.
+2025-10-18 23:07:22 [INFO] auto_testgen: Model saved to C:/Users/fleet/OneDrive/Documents/coding/python_unit_test_autogen/models/llama-3-8b-instruct.Q4_K_M.gguf
+2025-10-18 23:07:22 [ERROR] auto_testgen: Failed to load LLM: Failed to load model from file: C:/Users/fleet/OneDrive/Documents/coding/python_unit_test_autogen/models/llama-3-8b-instruct.Q4_K_M.gguf
+Traceback (most recent call last):
+  File "C:\Users\fleet\OneDrive\Documents\coding\python_unit_test_autogen\llm_client.py", line 19, in __init__
+    self.llm = Llama(
+  File "C:\Users\fleet\anaconda3\envs\autotestgen\lib\site-packages\llama_cpp\llama.py", line 374, in __init__
+    internals.LlamaModel(
+  File "C:\Users\fleet\anaconda3\envs\autotestgen\lib\site-packages\llama_cpp\_internals.py", line 58, in __init__
+    raise ValueError(f"Failed to load model from file: {path_model}")
+ValueError: Failed to load model from file: C:/Users/fleet/OneDrive/Documents/coding/python_unit_test_autogen/models/llama-3-8b-instruct.Q4_K_M.gguf
+2025-10-18 23:07:22 [ERROR] auto_testgen: Fatal error: Failed to load model from file: C:/Users/fleet/OneDrive/Documents/coding/python_unit_test_autogen/models/llama-3-8b-instruct.Q4_K_M.gguf
+Traceback (most recent call last):
+  File "C:\Users\fleet\OneDrive\Documents\coding\python_unit_test_autogen\auto_testgen.py", line 15, in main
+    llm = LLMClient(
+  File "C:\Users\fleet\OneDrive\Documents\coding\python_unit_test_autogen\llm_client.py", line 19, in __init__
+    self.llm = Llama(
+  File "C:\Users\fleet\anaconda3\envs\autotestgen\lib\site-packages\llama_cpp\llama.py", line 374, in __init__
+    internals.LlamaModel(
+  File "C:\Users\fleet\anaconda3\envs\autotestgen\lib\site-packages\llama_cpp\_internals.py", line 58, in __init__
+    raise ValueError(f"Failed to load model from file: {path_model}")
+ValueError: Failed to load model from file: C:/Users/fleet/OneDrive/Documents/coding/python_unit_test_autogen/models/llama-3-8b-instruct.Q4_K_M.gguf
+2025-10-18 23:07:22 [INFO] auto_testgen: === Auto TestGen Completed ===
+2025-10-18 23:08:27 [INFO] auto_testgen: === Auto TestGen Started ===
+2025-10-18 23:08:27 [WARNING] auto_testgen: Model path not found: C:/Users/fleet/OneDrive/Documents/coding/python_unit_test_autogen/models/llama-3-8b-instruct.Q4_K_M.gguf
+2025-10-18 23:08:27 [INFO] auto_testgen: Downloading model from https://huggingface.co/api/models/TheBloke/Llama-3-8B-Instruct-GGUF/resolve/main/llama-3-8b-instruct.Q4_K_M.gguf?download=true
+2025-10-18 23:08:28 [ERROR] auto_testgen: Fatal error: 404 Client Error: Not Found for url: https://huggingface.co/api/models/TheBloke/Llama-3-8B-Instruct-GGUF/resolve/main/llama-3-8b-instruct.Q4_K_M.gguf?download=true
+Traceback (most recent call last):
+  File "C:\Users\fleet\OneDrive\Documents\coding\python_unit_test_autogen\auto_testgen.py", line 15, in main
+    llm = LLMClient(
+  File "C:\Users\fleet\OneDrive\Documents\coding\python_unit_test_autogen\llm_client.py", line 16, in __init__
+    model_path = self._ensure_model(model_path)
+  File "C:\Users\fleet\OneDrive\Documents\coding\python_unit_test_autogen\llm_client.py", line 49, in _ensure_model
+    r.raise_for_status()  # fail fast if bad URL or permissions
+  File "C:\Users\fleet\anaconda3\envs\autotestgen\lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/api/models/TheBloke/Llama-3-8B-Instruct-GGUF/resolve/main/llama-3-8b-instruct.Q4_K_M.gguf?download=true
+2025-10-18 23:08:28 [INFO] auto_testgen: === Auto TestGen Completed ===
+2025-10-18 23:09:12 [INFO] auto_testgen: === Auto TestGen Started ===
+2025-10-18 23:09:12 [WARNING] auto_testgen: Model path not found: C:/Users/fleet/OneDrive/Documents/coding/python_unit_test_autogen/models/llama-3-8b-instruct.Q4_K_M.gguf
+2025-10-18 23:09:12 [INFO] auto_testgen: Attempting to download Phi-3 Mini 4K Instruct ...
+2025-10-18 23:09:12 [WARNING] auto_testgen: Failed to download Phi-3 Mini 4K Instruct: 404 Client Error: Not Found for url: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/resolve/main/phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:09:12 [INFO] auto_testgen: Attempting to download Llama 3 8B Instruct ...
+2025-10-18 23:09:12 [WARNING] auto_testgen: Failed to download Llama 3 8B Instruct: 401 Client Error: Unauthorized for url: https://huggingface.co/TheBloke/Llama-3-8B-Instruct-GGUF/resolve/main/llama-3-8b-instruct.Q4_K_M.gguf
+2025-10-18 23:09:12 [ERROR] auto_testgen: Fatal error: All fallback model downloads failed. Please check your internet connection or Hugging Face access.
+Traceback (most recent call last):
+  File "C:\Users\fleet\OneDrive\Documents\coding\python_unit_test_autogen\auto_testgen.py", line 15, in main
+    llm = LLMClient(
+  File "C:\Users\fleet\OneDrive\Documents\coding\python_unit_test_autogen\llm_client.py", line 16, in __init__
+    model_path = self._ensure_model(model_path)
+  File "C:\Users\fleet\OneDrive\Documents\coding\python_unit_test_autogen\llm_client.py", line 89, in _ensure_model
+    raise RuntimeError("All fallback model downloads failed. Please check your internet connection or Hugging Face access.")
+RuntimeError: All fallback model downloads failed. Please check your internet connection or Hugging Face access.
+2025-10-18 23:09:12 [INFO] auto_testgen: === Auto TestGen Completed ===
+2025-10-18 23:10:51 [INFO] auto_testgen: === Auto TestGen Started ===
+2025-10-18 23:10:51 [WARNING] auto_testgen: Model path not found: models/phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:10:51 [INFO] auto_testgen: Attempting to download Phi-3 Mini 4K Instruct ...
+2025-10-18 23:10:51 [WARNING] auto_testgen: Failed to download Phi-3 Mini 4K Instruct: 401 Client Error: Unauthorized for url: https://huggingface.co/meetkai/Phi-3-mini-4k-instruct-GGUF/resolve/main/Phi-3-mini-4k-instruct-Q4_K_M.gguf
+2025-10-18 23:10:51 [INFO] auto_testgen: Attempting to download Mistral 7B Instruct v0.2 ...
+2025-10-18 23:11:28 [INFO] auto_testgen: Mistral 7B Instruct v0.2 verified successfully.
+2025-10-18 23:11:30 [INFO] auto_testgen: Model loaded successfully from models\mistral-7b-instruct-v0.2.Q4_K_M.gguf
+2025-10-18 23:11:34 [INFO] auto_testgen: Generating tests for C:/Users/fleet/OneDrive/Documents/coding/python_unit_test_autogen\auto_testgen.py
+2025-10-18 23:16:58 [INFO] auto_testgen: === Auto TestGen Started ===
+2025-10-18 23:16:58 [WARNING] auto_testgen: Model path not found: models/phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:16:58 [INFO] auto_testgen: Attempting to download Phi-3 Mini 4K Instruct ...
+2025-10-18 23:16:59 [WARNING] auto_testgen: Failed to download Phi-3 Mini 4K Instruct: 401 Client Error: Unauthorized for url: https://huggingface.co/meetkai/Phi-3-mini-4k-instruct-GGUF/resolve/main/Phi-3-mini-4k-instruct-Q4_K_M.gguf
+2025-10-18 23:16:59 [INFO] auto_testgen: Attempting to download Mistral 7B Instruct v0.2 ...
+2025-10-18 23:19:39 [INFO] auto_testgen: === Auto TestGen Started ===
+2025-10-18 23:19:39 [INFO] auto_testgen: Found valid existing model: models\mistral-7b-instruct-v0.2.Q4_K_M.gguf
+2025-10-18 23:19:39 [ERROR] auto_testgen: Failed to load LLM: Failed to load model from file: models\mistral-7b-instruct-v0.2.Q4_K_M.gguf
+Traceback (most recent call last):
+  File "C:\Users\fleet\OneDrive\Documents\coding\python_unit_test_autogen\llm_client.py", line 23, in __init__
+    self.llm = Llama(
+  File "C:\Users\fleet\anaconda3\envs\autotestgen\lib\site-packages\llama_cpp\llama.py", line 374, in __init__
+    internals.LlamaModel(
+  File "C:\Users\fleet\anaconda3\envs\autotestgen\lib\site-packages\llama_cpp\_internals.py", line 58, in __init__
+    raise ValueError(f"Failed to load model from file: {path_model}")
+ValueError: Failed to load model from file: models\mistral-7b-instruct-v0.2.Q4_K_M.gguf
+2025-10-18 23:19:39 [ERROR] auto_testgen: Fatal error: Failed to load model from file: models\mistral-7b-instruct-v0.2.Q4_K_M.gguf
+Traceback (most recent call last):
+  File "C:\Users\fleet\OneDrive\Documents\coding\python_unit_test_autogen\auto_testgen.py", line 15, in main
+    llm = LLMClient(
+  File "C:\Users\fleet\OneDrive\Documents\coding\python_unit_test_autogen\llm_client.py", line 23, in __init__
+    self.llm = Llama(
+  File "C:\Users\fleet\anaconda3\envs\autotestgen\lib\site-packages\llama_cpp\llama.py", line 374, in __init__
+    internals.LlamaModel(
+  File "C:\Users\fleet\anaconda3\envs\autotestgen\lib\site-packages\llama_cpp\_internals.py", line 58, in __init__
+    raise ValueError(f"Failed to load model from file: {path_model}")
+ValueError: Failed to load model from file: models\mistral-7b-instruct-v0.2.Q4_K_M.gguf
+2025-10-18 23:19:39 [INFO] auto_testgen: === Auto TestGen Completed ===
+2025-10-18 23:20:12 [INFO] auto_testgen: === Auto TestGen Started ===
+2025-10-18 23:20:12 [INFO] auto_testgen: Attempting to download Mistral 7B Instruct v0.2 ...
+2025-10-18 23:20:58 [INFO] auto_testgen: Mistral 7B Instruct v0.2 verified successfully.
+2025-10-18 23:20:58 [INFO] auto_testgen: Loading model from models\mistral-7b-instruct-v0.2.Q4_K_M.gguf ...
+2025-10-18 23:21:00 [INFO] auto_testgen: Model loaded successfully from models\mistral-7b-instruct-v0.2.Q4_K_M.gguf
+2025-10-18 23:21:04 [INFO] auto_testgen: Generating tests for C:/Users/fleet/OneDrive/Documents/coding/python_unit_test_autogen\auto_testgen.py
+2025-10-18 23:23:21 [INFO] auto_testgen: === Auto TestGen Started ===
+2025-10-18 23:23:21 [INFO] auto_testgen: Attempting to download Mistral 7B Instruct v0.2 ...
+2025-10-18 23:23:58 [INFO] auto_testgen: Mistral 7B Instruct v0.2 verified successfully.
+2025-10-18 23:23:58 [INFO] auto_testgen: Loading model from models\mistral-7b-instruct-v0.2.Q4_K_M.gguf ...
+2025-10-18 23:24:00 [INFO] auto_testgen: Model loaded successfully from models\mistral-7b-instruct-v0.2.Q4_K_M.gguf
+2025-10-18 23:24:03 [INFO] auto_testgen: Generating tests for C:/Users/fleet/OneDrive/Documents/coding/python_unit_test_autogen\auto_testgen.py
+2025-10-18 23:24:28 [INFO] auto_testgen: === Auto TestGen Started ===
+2025-10-18 23:24:28 [INFO] auto_testgen: Downloading Mistral 7B Instruct v0.2 …
+2025-10-18 23:25:05 [INFO] auto_testgen: Model verified successfully.
+2025-10-18 23:25:05 [INFO] auto_testgen: Loading model from models\phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:25:08 [INFO] auto_testgen: Model loaded successfully from models\phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:25:11 [INFO] auto_testgen: Generating tests for C:/Users/fleet/OneDrive/Documents/coding/python_unit_test_autogen\auto_testgen.py
+2025-10-18 23:26:32 [INFO] auto_testgen: === Auto TestGen Started ===
+2025-10-18 23:26:32 [INFO] auto_testgen: ✅ Valid existing model found at models\phi-3-mini-4k-instruct.Q4_K_M.gguf (4.07 GB).
+2025-10-18 23:26:32 [INFO] auto_testgen: ✅ Using existing model: models\phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:26:32 [INFO] auto_testgen: Loading model from models\phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:26:35 [INFO] auto_testgen: Model loaded successfully from models\phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:26:38 [INFO] auto_testgen: Generating tests for C:/Users/fleet/OneDrive/Documents/coding/python_unit_test_autogen\auto_testgen.py
+2025-10-18 23:29:10 [INFO] auto_testgen: === Auto TestGen Started ===
+2025-10-18 23:29:10 [INFO] auto_testgen: ✅ Valid model file found (4.07 GB)
+2025-10-18 23:29:10 [INFO] auto_testgen: ✅ Using existing model: models\phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:29:10 [INFO] auto_testgen: Loading model from models\phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:29:12 [INFO] auto_testgen: Model loaded successfully from models\phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:29:13 [INFO] auto_testgen: Generating tests for .\auto_testgen.py
+2025-10-18 23:32:39 [ERROR] auto_testgen: ❌ Max fix attempts reached for tests\test_auto_testgen.py
+2025-10-18 23:32:40 [INFO] auto_testgen: Generating tests for .\llm_client.py
+2025-10-18 23:35:21 [INFO] auto_testgen: === Auto TestGen Started ===
+2025-10-18 23:35:21 [INFO] auto_testgen: ✅ Valid model file found (4.07 GB)
+2025-10-18 23:35:21 [INFO] auto_testgen: ✅ Using existing model: models\phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:35:21 [INFO] auto_testgen: Loading model from models\phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:35:23 [INFO] auto_testgen: Model loaded successfully from models\phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:35:24 [INFO] auto_testgen: Generating tests for .\auto_testgen.py
+2025-10-18 23:41:42 [INFO] auto_testgen: === Auto TestGen Started ===
+2025-10-18 23:41:45 [INFO] auto_testgen: ✅ Valid GGUF model (4.07 GB, SHA256 3e0039fd0273)
+2025-10-18 23:41:45 [INFO] auto_testgen: ✅ Using existing model: models\phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:41:45 [INFO] auto_testgen: Loading model from models\phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:41:47 [INFO] auto_testgen: Model loaded successfully from models\phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:41:48 [INFO] auto_testgen: Streaming test generation to tests\test_auto_testgen.py.tmp
+2025-10-18 23:42:30 [INFO] auto_testgen: === Auto TestGen Started ===
+2025-10-18 23:42:33 [INFO] auto_testgen: ✅ Valid GGUF model (4.07 GB, SHA256 3e0039fd0273)
+2025-10-18 23:42:33 [INFO] auto_testgen: ✅ Using existing model: models\phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:42:33 [INFO] auto_testgen: Loading model from models\phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:42:35 [INFO] auto_testgen: Model loaded successfully from models\phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:42:36 [INFO] auto_testgen: Streaming test generation to tests\test_auto_testgen.py.tmp
+2025-10-18 23:46:03 [INFO] auto_testgen: 
+✅ Completed writing tests\test_auto_testgen.py (415 tokens)
+2025-10-18 23:46:03 [ERROR] auto_testgen: ❌ Max fix attempts reached for tests\test_auto_testgen.py
+2025-10-18 23:46:05 [INFO] auto_testgen: Streaming test generation to tests\test_llm_client.py.tmp
+2025-10-18 23:54:39 [INFO] auto_testgen: === Auto TestGen Started ===
+2025-10-18 23:54:43 [INFO] auto_testgen: ✅ Valid GGUF model (4.07 GB, SHA256 3e0039fd0273)
+2025-10-18 23:54:43 [INFO] auto_testgen: ✅ Using existing model: models\phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:54:43 [INFO] auto_testgen: Loading model from models\phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:54:45 [INFO] auto_testgen: Model loaded successfully from models\phi-3-mini-4k-instruct.Q4_K_M.gguf
+2025-10-18 23:54:46 [INFO] auto_testgen: Streaming test generation to tests\test_auto_testgen.py.tmp
+2025-10-19 00:01:22 [WARNING] auto_testgen: ⚠️ Incomplete or invalid syntax detected (invalid syntax (<unknown>, line 1)).
+2025-10-19 00:01:22 [WARNING] auto_testgen: ⚠️ Detected incomplete code. Continuing generation (pass 1)...
+2025-10-19 00:02:20 [WARNING] auto_testgen: ⚠️ Incomplete or invalid syntax detected (invalid syntax (<unknown>, line 1)).
+2025-10-19 00:02:20 [WARNING] auto_testgen: ⚠️ Detected incomplete code. Continuing generation (pass 2)...
+2025-10-19 00:03:11 [WARNING] auto_testgen: ⚠️ Incomplete or invalid syntax detected (invalid syntax (<unknown>, line 1)).
+2025-10-19 00:03:11 [WARNING] auto_testgen: ⚠️ Detected incomplete code. Continuing generation (pass 3)...
+2025-10-19 00:03:46 [WARNING] auto_testgen: ⚠️ Incomplete or invalid syntax detected (closing parenthesis ')' does not match opening parenthesis '[' (<unknown>, line 163)).
+2025-10-19 00:03:46 [ERROR] auto_testgen: ❌ Still incomplete after retries: test_auto_testgen.py
+2025-10-19 00:03:46 [INFO] auto_testgen: 
+✅ Completed writing tests\test_auto_testgen.py
+2025-10-19 00:03:46 [ERROR] auto_testgen: ❌ Max fix attempts reached for tests\test_auto_testgen.py
+2025-10-19 00:03:47 [INFO] auto_testgen: Streaming test generation to tests\test_llm_client.py.tmp
+2025-10-19 00:37:27 [WARNING] auto_testgen: ⚠️ Incomplete or invalid syntax detected ('(' was never closed (<unknown>, line 505)).
+2025-10-19 00:37:27 [WARNING] auto_testgen: ⚠️ Detected incomplete code. Continuing generation (pass 1)...
+2025-10-19 00:38:29 [WARNING] auto_testgen: ⚠️ Incomplete or invalid syntax detected ('(' was never closed (<unknown>, line 505)).
+2025-10-19 00:38:29 [WARNING] auto_testgen: ⚠️ Detected incomplete code. Continuing generation (pass 2)...
+2025-10-19 00:38:54 [WARNING] auto_testgen: ⚠️ Incomplete or invalid syntax detected ('(' was never closed (<unknown>, line 505)).
+2025-10-19 00:38:54 [WARNING] auto_testgen: ⚠️ Detected incomplete code. Continuing generation (pass 3)...
+2025-10-19 00:39:24 [WARNING] auto_testgen: ⚠️ Incomplete or invalid syntax detected ('(' was never closed (<unknown>, line 505)).
+2025-10-19 00:39:24 [ERROR] auto_testgen: ❌ Still incomplete after retries: test_llm_client.py
+2025-10-19 00:39:24 [INFO] auto_testgen: 
+✅ Completed writing tests\test_llm_client.py
+2025-10-19 00:39:24 [ERROR] auto_testgen: ❌ Max fix attempts reached for tests\test_llm_client.py
+2025-10-19 00:39:25 [INFO] auto_testgen: Streaming test generation to tests\test_logger.py.tmp
+2025-10-19 00:42:08 [WARNING] auto_testgen: ⚠️ Incomplete or invalid syntax detected (invalid syntax (<unknown>, line 1)).
+2025-10-19 00:42:08 [WARNING] auto_testgen: ⚠️ Detected incomplete code. Continuing generation (pass 1)...
+2025-10-19 00:42:27 [WARNING] auto_testgen: ⚠️ Incomplete or invalid syntax detected (invalid syntax (<unknown>, line 1)).
+2025-10-19 00:42:27 [WARNING] auto_testgen: ⚠️ Detected incomplete code. Continuing generation (pass 2)...
+2025-10-19 00:44:20 [WARNING] auto_testgen: ⚠️ Incomplete or invalid syntax detected (invalid syntax (<unknown>, line 1)).
+2025-10-19 00:44:20 [WARNING] auto_testgen: ⚠️ Detected incomplete code. Continuing generation (pass 3)...
+2025-10-19 00:44:37 [WARNING] auto_testgen: ⚠️ Incomplete or invalid syntax detected (invalid syntax (<unknown>, line 1)).
+2025-10-19 00:44:37 [ERROR] auto_testgen: ❌ Still incomplete after retries: test_logger.py
+2025-10-19 00:44:37 [INFO] auto_testgen: 
+✅ Completed writing tests\test_logger.py
+2025-10-19 00:44:37 [ERROR] auto_testgen: ❌ Max fix attempts reached for tests\test_logger.py
+2025-10-19 00:44:38 [INFO] auto_testgen: Streaming test generation to tests\test_utils.py.tmp
+2025-10-19 00:46:49 [WARNING] auto_testgen: ⚠️ Incomplete or invalid syntax detected (invalid syntax (<unknown>, line 1)).
+2025-10-19 00:46:49 [WARNING] auto_testgen: ⚠️ Detected incomplete code. Continuing generation (pass 1)...
+2025-10-19 00:47:38 [WARNING] auto_testgen: ⚠️ Incomplete or invalid syntax detected (invalid syntax (<unknown>, line 1)).
+2025-10-19 00:47:38 [WARNING] auto_testgen: ⚠️ Detected incomplete code. Continuing generation (pass 2)...
+2025-10-19 00:48:17 [WARNING] auto_testgen: ⚠️ Incomplete or invalid syntax detected (invalid syntax (<unknown>, line 1)).
+2025-10-19 00:48:17 [WARNING] auto_testgen: ⚠️ Detected incomplete code. Continuing generation (pass 3)...
+2025-10-19 00:48:42 [WARNING] auto_testgen: ⚠️ Incomplete or invalid syntax detected (invalid syntax (<unknown>, line 1)).
+2025-10-19 00:48:42 [ERROR] auto_testgen: ❌ Still incomplete after retries: test_utils.py
+2025-10-19 00:48:42 [INFO] auto_testgen: 
+✅ Completed writing tests\test_utils.py
+2025-10-19 00:48:42 [ERROR] auto_testgen: ❌ Max fix attempts reached for tests\test_utils.py
+2025-10-19 00:48:43 [INFO] auto_testgen: 
+=== Summary Report ===
+2025-10-19 00:48:43 [INFO] auto_testgen: auto_testgen.py              0.0% →    0.0%  (+0.0%)
+2025-10-19 00:48:43 [INFO] auto_testgen: llm_client.py                0.0% →    0.0%  (+0.0%)
+2025-10-19 00:48:43 [INFO] auto_testgen: logger.py                    0.0% →    0.0%  (+0.0%)
+2025-10-19 00:48:43 [INFO] auto_testgen: utils.py                     0.0% →    0.0%  (+0.0%)
+2025-10-19 00:48:43 [INFO] auto_testgen: === Auto TestGen Completed ===

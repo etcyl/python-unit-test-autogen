@@ -1,0 +1,18 @@
+{
+  "auto_testgen.py": {
+    "previous_coverage": 0,
+    "new_coverage": 0
+  },
+  "llm_client.py": {
+    "previous_coverage": 0,
+    "new_coverage": 0
+  },
+  "logger.py": {
+    "previous_coverage": 0,
+    "new_coverage": 0
+  },
+  "utils.py": {
+    "previous_coverage": 0,
+    "new_coverage": 0
+  }
+}
